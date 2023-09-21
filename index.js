@@ -5,9 +5,12 @@ const bodyParser = require("body-parser");
 const PORT = process.env.PORT || 8006;
 const cors = require("cors");
 
-app.use(cors());
-
-app.options("*", cors()); // Enable CORS for all routes with HTTP OPTIONS requests
+const newURL = "https://world-visa-travel.vercel.app/moreinfo/officialvisa";
+app.use(
+  cors({
+    origin: newURL,
+  })
+);
 
 const pdfMailer = require("./routes/PdfMailer");
 const connectDB = require("./config/ConnectDB");
