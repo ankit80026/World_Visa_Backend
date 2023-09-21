@@ -1,4 +1,4 @@
-const PdfTemplate = (citizen, desCountry) => {
+const PdfTemplate = (citizen, dstCountry) => {
   const htmlContent = `
     <html>
     <head>
@@ -35,7 +35,7 @@ td,th {
     </head>
   <body>
   <div>
-    <h5>${desCountry} TOURIST VISA – ${citizen} CITIZENS</h5>
+    <h5>${dstCountry} TOURIST VISA – ${citizen} CITIZENS</h5>
   </div>
 <table>
   <thead>
@@ -57,11 +57,11 @@ For Additional Visa Pages and U.S. Passport Renewal.</td>
      <tr>
        <td class="grey-tr">Letter of Intent</td>
        <td>A letter of intent addressing to the Embassy of Afghanistan outlining the applicants
-purpose of travel, length of stay, name of places to be visited, contact information and accommodation information in ${desCountry}.</td>
+purpose of travel, length of stay, name of places to be visited, contact information and accommodation information in ${dstCountry}.</td>
      </tr>
      <tr>
        <td class="grey-tr">Previous Visa Copy</td>
-       <td>A copy of your most recent ${desCountry} Visa.</td>
+       <td>A copy of your most recent ${dstCountry} Visa.</td>
      </tr>
      <tr>
        <td class="grey-tr">Proof of Departure</td>
