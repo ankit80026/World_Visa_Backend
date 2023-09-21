@@ -63,7 +63,7 @@ router.post("/", async (req, res) => {
       phone,
       citizen,
       srcCountry,
-      desCountry,
+      dstCountry,
     });
 
     res.status(200).json({ message: "Email sent successfully", user: newUser });

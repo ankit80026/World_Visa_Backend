@@ -21,7 +21,7 @@ const FormPdfmodel = mongoose.Schema({
     type: String,
     required: true,
   },
-  desCountry: {
+  dstCountry: {
     type: String,
     required: true,
   },
