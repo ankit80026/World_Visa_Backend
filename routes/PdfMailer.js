@@ -9,6 +9,7 @@ const FormPdfmodel = require("../models/FormPdfmodel");
 router.post("/", async (req, res) => {
   try {
     const { name, phone, citizen, srcCountry, dstCountry, email } = req.body;
+    console.log("ankit", name, phone, citizen, srcCountry, dstCountry, email);
     const htmlContent = PdfTemplate(citizen, dstCountry);
     const pdfOptions = {
       format: "Letter",
