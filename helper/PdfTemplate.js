@@ -1,4 +1,4 @@
-const PdfTemplate = (citizen, dstCountry) => {
+const PdfTemplate = (citizen, dstCountry, Type) => {
   const htmlContent = `
     <html>
     <head>
@@ -35,7 +35,7 @@ td,th {
     </head>
   <body>
   <div>
-    <h5>${dstCountry} TOURIST VISA – ${citizen} CITIZENS</h5>
+    <h5>${dstCountry} ${Type} – ${citizen} CITIZENS</h5>
   </div>
 <table>
   <thead>

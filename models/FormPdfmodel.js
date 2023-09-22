@@ -25,6 +25,10 @@ const FormPdfmodel = mongoose.Schema({
     type: String,
     required: true,
   },
+  Type: {
+    type: String,
+    required: true,
+  },
 });
 
 module.exports = mongoose.model("Formpdfs", FormPdfmodel);
